@@ -28,4 +28,11 @@ class PageController extends Controller
 
         return response()->json($technologies);
     }
+
+    public function types()
+    {
+        $types = Type::all();
+
+        return response()->json($types);
+    }
 }

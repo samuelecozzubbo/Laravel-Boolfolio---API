@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //ROTE API
 Route::get('/', [PageController::class, 'index']);
 Route::get('/technologies', [PageController::class, 'technologies']);
+Route::get('/types', [PageController::class, 'types']);
