@@ -21,4 +21,11 @@ class PageController extends Controller
         ];
         return response()->json($result);
     }
+
+    public function technologies()
+    {
+        $technologies = Technology::all();
+
+        return response()->json($technologies);
+    }
 }
