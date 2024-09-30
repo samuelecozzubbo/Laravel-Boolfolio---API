@@ -57,4 +57,17 @@ class PageController extends Controller
 
         return response()->json(compact('success', 'project'));
     }
+
+    public function projectByType($slug)
+    {
+        //slug del tipo
+        if ($slug) {
+            $success = true;
+            $type = Type::where('slug', $slug)->with('projects')->first();
+        } else {
+            $success = false;
+        }
+
+        return response()->json(compact('success', 'type'));
+    }
 }

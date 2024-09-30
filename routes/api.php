@@ -24,3 +24,4 @@ Route::get('/', [PageController::class, 'index']);
 Route::get('/technologies', [PageController::class, 'technologies']);
 Route::get('/types', [PageController::class, 'types']);
 Route::get('project-by-slug/{slug}', [PageController::class, 'projectBySlug']);
+Route::get('project-by-type/{slug}', [PageController::class, 'projectByType']);
