@@ -6,6 +6,7 @@
             <div class="alert alert-success">{{ session('message') }}</div>
         @endif
         <h1>{{ $project->title }}</h1>
+        <h6>Slug: {{ $project->slug }}</h6>
         <p>Description: {{ $project->description }}</p>
         <p>Start Date: {{ $project->start_date }}</p>
         <p>End Date: {{ $project->end_date }}</p>
