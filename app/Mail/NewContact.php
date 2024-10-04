@@ -40,7 +40,7 @@ class NewContact extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'email.newcontact',
         );
     }
 
